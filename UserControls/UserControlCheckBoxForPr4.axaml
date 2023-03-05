@@ -1,0 +1,35 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="128"
+             x:Class="PR4_1.UserControls.UserControlCheckBoxForPr4"
+			 FontFamily="lato" Foreground="#fff">
+<UserControl.Styles>
+		<Style Selector="Border:pressed">
+			<Setter Property="Opacity" Value="10"/>
+		</Style>
+</UserControl.Styles>
+	<Grid Margin="8,0,8,0" Background="#2ecc71" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+				<ColumnDefinition Width="50"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*"></RowDefinition>
+				<RowDefinition Height="*"></RowDefinition>
+			</Grid.RowDefinitions>
+			<Border Grid.Column="2" Grid.RowSpan="2" Background="Black" Opacity="90">
+			</Border>
+			<Image VerticalAlignment="Top" Margin="30,0,30,0" Source="/Assets/sad.png" Grid.Column="2" Stretch="Uniform"></Image>
+			<Label Content="or" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"
+			FontSize="20" Grid.RowSpan="2"></Label>
+			<Border Grid.RowSpan="2" Background="Black" Opacity="90"></Border>
+			<Image VerticalAlignment="Top" Margin="30,0,30,0" Source="/Assets/happy.png" Stretch="Uniform"></Image>
+	
+			<Label Grid.Row="1" Content="Happy" HorizontalAlignment="Center" FontSize="20"></Label>
+			<Label Grid.Row="1" Grid.Column="2" Content="Sad" HorizontalAlignment="Center" FontSize="20"></Label>
+		</Grid>
+	
+</UserControl>

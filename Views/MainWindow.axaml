@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:PR4_1.ViewModels"
+		xmlns:uc="clr-namespace:PR4_1.UserControls"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="450"
+        x:Class="PR4_1.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="PR4_1" Height="580" Width="850" WindowStartupLocation="CenterScreen"
+		MinHeight="100" MinWidth="354" MaxHeight="600" MaxWidth="635">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+	<StackPanel>
+		<Button Classes="btn-submit" VerticalAlignment="Center" HorizontalAlignment="Center"
+			Width="150" Height="45" Foreground="White" Margin="20">
+		</Button>
+		<uc:UserControlCheckBoxForPr4></uc:UserControlCheckBoxForPr4>
+	</StackPanel>
+</Window>

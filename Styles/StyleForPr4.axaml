@@ -1,0 +1,33 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <!-- Add Controls for Previewer Here -->
+        </Border>
+    </Design.PreviewWith>
+
+    <!-- Add Styles Here -->
+
+	<!-- Button submit style-->
+	<Style Selector="Button.btn-submit">
+		<Setter Property="Foreground" Value="White"></Setter>
+		<Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+		<Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+		<Setter Property="Content" Value="Submit"></Setter>
+		<Setter Property="Background" Value="#38489d"></Setter>
+		<Setter Property="FontSize" Value="20"></Setter>
+		<Setter Property="CornerRadius" Value="6"></Setter>
+	</Style>
+	<Style Selector="Button.btn-submit:pointerover/template/ContentPresenter#PART_ContentPresenter">
+		<Setter Property="Background" Value="#2d3983"/>
+		<Setter Property="Button.Foreground" Value="White"></Setter>
+	</Style>
+	<Style Selector="Button.btn-submit:pressed/template/ContentPresenter#PART_ContentPresenter">
+		<Setter Property="Background" Value="#4c57a7"></Setter>
+		<Setter Property="Button.Foreground" Value="White"></Setter>
+		<Setter Property="BorderBrush" Value="#BDE0FF"></Setter>
+		<Setter Property="BorderThickness" Value="3"></Setter>
+	</Style>
+	
+	
+</Styles>
