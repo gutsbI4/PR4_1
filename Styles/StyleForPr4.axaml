@@ -28,6 +28,13 @@
 		<Setter Property="BorderBrush" Value="#BDE0FF"></Setter>
 		<Setter Property="BorderThickness" Value="3"></Setter>
 	</Style>
+
+	<!-- TextBox search-->
+	<Style Selector="TextBox">
+		<Setter Property="Watermark" Value="Search here"></Setter>
+		<Setter Property="CornerRadius" Value="0"></Setter>
+		<Setter Property="BorderBrush" Value="#808080"></Setter>
+	</Style>
 	
 	
 </Styles>
