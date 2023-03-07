@@ -8,7 +8,7 @@
         x:Class="PR4_1.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
         Title="PR4_1" Height="580" Width="850" WindowStartupLocation="CenterScreen"
-		MinHeight="100" MinWidth="354" MaxHeight="600" MaxWidth="635" Background="#2ecc71">
+		MinHeight="350" MinWidth="354" MaxHeight="600" MaxWidth="635" Background="#2ecc71">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
@@ -20,6 +20,9 @@
 			Width="150" Height="45" Foreground="White" Margin="20">
 		</Button>
 		<uc:UserControlCheckBoxForPr4></uc:UserControlCheckBoxForPr4>
-		<TextBox Margin="100,50,100,0"></TextBox>
+		<TextBox Margin="30"
+          />
+
+
 	</StackPanel>
 </Window>
